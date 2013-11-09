@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-09 13:51+0100\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "TwentyTwenty"
+msgstr "TwentyTwenty"
+
+msgid "TwentyTwenty effect for before/after images"
+msgstr "Effet TwentyTwenty pour les images avant/après"
+
+msgid "Enable TwentyTwenty"
+msgstr "Activer TwentyTwenty"
