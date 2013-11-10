@@ -27,6 +27,9 @@ class twentyTwentyBehaviors
 		'<p><label class="classic">'.
 		form::checkbox('twentytwenty_enabled','1',$settings->twentytwenty->enabled).
 		__('Enable TwentyTwenty').'</label></p>'.
+		form::checkbox('twentytwenty_jquery','1',$settings->twentytwenty->jquery).
+		__('Load jQuery').'</label></p>'.
+		'<p class="clear form-note">'.__('Activate this option if your theme and other plugins do not already load jQuery.').'</p>'.
 		'</div>';
 	}
 
@@ -34,5 +37,6 @@ class twentyTwentyBehaviors
 	{
 		$settings->addNameSpace('twentytwenty');
 		$settings->twentytwenty->put('enabled',!empty($_POST['twentytwenty_enabled']),'boolean');
+		$settings->twentytwenty->put('jquery',!empty($_POST['twentytwenty_jquery']),'boolean');
 	}
 }

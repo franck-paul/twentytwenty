@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-10 08:53+0100\n"
+"POT-Creation-Date: 2013-11-10 09:32+0100\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
 msgid "TwentyTwenty"
@@ -12,6 +12,12 @@ msgstr "Effet TwentyTwenty pour les images avant/après"
 
 msgid "Enable TwentyTwenty"
 msgstr "Activer TwentyTwenty"
+
+msgid "Load jQuery"
+msgstr "Charger jQuery"
+
+msgid "Activate this option if your theme and other plugins do not already load jQuery."
+msgstr "Activez cette option si votre thème et vos autres plugins ne chargent pas jQuery. "
 
 msgid "Before"
 msgstr "Avant"

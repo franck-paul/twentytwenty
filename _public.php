@@ -28,9 +28,13 @@ class twentyTwentyPublic
 		'@import url('.$url.'/css/twentytwenty.css);'."\n".
 		'.twentytwenty-before-label:before { content: "'.__('Before').'"; }'."\n".
 		'.twentytwenty-after-label:before { content: "'.__('After').'"; }'."\n".
-		"</style>\n".
-		'<script type="text/javascript" src="'.$url.'/js/jquery.min.js"></script>'."\n".
-		'<script type="text/javascript" src="'.$url.'/js/jquery.cookie.min.js"></script>'."\n".
+		"</style>\n";
+		if ($core->blog->settings->twentytwenty->jquery) {
+			echo
+			'<script type="text/javascript" src="'.$url.'/js/jquery.min.js"></script>'."\n".
+			'<script type="text/javascript" src="'.$url.'/js/jquery.cookie.min.js"></script>'."\n";
+		}
+		echo
 		'<script type="text/javascript" src="'.$url.'/js/jquery.event.move.min.js"></script>'."\n".
 		'<script type="text/javascript" src="'.$url.'/js/jquery.twentytwenty.min.js"></script>'."\n".
 		'<script type="text/javascript">'."\n".
