@@ -33,6 +33,6 @@ class twentyTwentyBehaviors
 	public static function adminBeforeBlogSettingsUpdate($settings)
 	{
 		$settings->addNameSpace('twentytwenty');
-		$settings->twentytwenty->put('enabled',!empty($_POST['lightbox_enabled']),'boolean');
+		$settings->twentytwenty->put('enabled',!empty($_POST['twentytwenty_enabled']),'boolean');
 	}
 }
