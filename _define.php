@@ -15,8 +15,9 @@ $this->registerModule(
 	/* Name */				"TwentyTwenty",
 	/* Description*/		"TwentyTwenty effect for before/after images",
 	/* Author */			"Franck Paul and contributors",
-	/* Version */			"0.2",
+	/* Version */			"0.3",
 	array(
+		/* Dependencies */	'requires' =>		array(array('core','2.9')),
 		/* Permissions */	'permissions' =>	'admin',
 		/* Type */			'type' =>			'plugin'
 	)

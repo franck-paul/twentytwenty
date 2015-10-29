@@ -22,21 +22,20 @@ class twentyTwentyPublic
 			return;
 		}
 
-		$url = $core->blog->getQmarkURL().'pf='.basename(dirname(__FILE__));
 		echo
+		dcUtils::cssLoad($core->blog->getPF('twentytwenty/css/twentytwenty.css')).
 		'<style type="text/css">'."\n".
-		'@import url('.$url.'/css/twentytwenty.css);'."\n".
 		'.twentytwenty-before-label:before { content: "'.__('Before').'"; }'."\n".
 		'.twentytwenty-after-label:before { content: "'.__('After').'"; }'."\n".
 		"</style>\n";
 		if ($core->blog->settings->twentytwenty->jquery) {
 			echo
-			'<script type="text/javascript" src="'.$url.'/js/jquery.min.js"></script>'."\n".
-			'<script type="text/javascript" src="'.$url.'/js/jquery.cookie.min.js"></script>'."\n";
+			dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.min.js')).
+			dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.cookie.min.js'));
 		}
 		echo
-		'<script type="text/javascript" src="'.$url.'/js/jquery.event.move.min.js"></script>'."\n".
-		'<script type="text/javascript" src="'.$url.'/js/jquery.twentytwenty.min.js"></script>'."\n".
+		dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.event.move.min.js')).
+		dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.twentytwenty.min.js')).
 		'<script type="text/javascript">'."\n".
 		"//<![CDATA[\n".
 		'$(window).load(function(){'."\n".
