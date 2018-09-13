@@ -14,13 +14,13 @@
 if (!defined('DC_RC_PATH')) {return;}
 
 $this->registerModule(
-    "TwentyTwenty",                                // Name
-    "TwentyTwenty effect for before/after images", // Description
-    "Franck Paul and contributors",                // Author
-    "0.3",                                         // Version
-    array(
-        'requires'    => array(array('core', '2.9')), // Dependencies
-        'permissions' => 'admin',                     // Permissions
-        'type'        => 'plugin'                    // Type
-    )
+    'TwentyTwenty',                                // Name
+    'TwentyTwenty effect for before/after images', // Description
+    'Franck Paul and contributors',                // Author
+    '0.3',                                         // Version
+    [
+        'requires'    => [['core', '2.13']], // Dependencies
+        'permissions' => 'admin',            // Permissions
+        'type'        => 'plugin'           // Type
+    ]
 );

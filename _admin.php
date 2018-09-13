@@ -16,8 +16,8 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 // dead but useful code, in order to have translations
 __('TwentyTwenty') . __('TwentyTwenty effect for before/after images');
 
-$core->addBehavior('adminBlogPreferencesForm', array('twentyTwentyBehaviors', 'adminBlogPreferencesForm'));
-$core->addBehavior('adminBeforeBlogSettingsUpdate', array('twentyTwentyBehaviors', 'adminBeforeBlogSettingsUpdate'));
+$core->addBehavior('adminBlogPreferencesForm', ['twentyTwentyBehaviors', 'adminBlogPreferencesForm']);
+$core->addBehavior('adminBeforeBlogSettingsUpdate', ['twentyTwentyBehaviors', 'adminBeforeBlogSettingsUpdate']);
 
 class twentyTwentyBehaviors
 {

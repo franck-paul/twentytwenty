@@ -13,7 +13,7 @@
 
 if (!defined('DC_RC_PATH')) {return;}
 
-$core->addBehavior('publicHeadContent', array('twentyTwentyPublic', 'publicHeadContent'));
+$core->addBehavior('publicHeadContent', ['twentyTwentyPublic', 'publicHeadContent']);
 
 class twentyTwentyPublic
 {
@@ -39,9 +39,7 @@ class twentyTwentyPublic
         dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.event.move.min.js')) .
         dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.twentytwenty.min.js')) .
             '<script type="text/javascript">' . "\n" .
-            '$(window).load(function(){' . "\n" .
-            '$(".twentytwenty-container").twentytwenty();' . "\n" .
-            '});' . "\n" .
+            '$(window).load(function(){ $(".twentytwenty-container").twentytwenty(); });' . "\n" .
             "</script>\n";
     }
 }
