@@ -25,7 +25,7 @@ class twentyTwentyBehaviors
     {
         $settings->addNameSpace('twentytwenty');
         echo
-        '<div class="fieldset"><h4>TwentyTwenty</h4>' .
+        '<div class="fieldset"><h4 id="twentytwenty">TwentyTwenty</h4>' .
         '<p><label class="classic">' .
         form::checkbox('twentytwenty_enabled', '1', $settings->twentytwenty->enabled) .
         __('Enable TwentyTwenty') . '</label></p>' .

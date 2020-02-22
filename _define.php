@@ -19,8 +19,10 @@ $this->registerModule(
     'Franck Paul and contributors',                // Author
     '0.4',                                         // Version
     [
-        'requires'    => [['core', '2.16']], // Dependencies
-        'permissions' => 'admin',            // Permissions
-        'type'        => 'plugin'           // Type
+        'requires'    => [['core', '2.16']],                            // Dependencies
+        'permissions' => 'admin',                                       // Permissions
+        'support'     => 'https://github.com/franck-paul/twentytwenty', // Support URL
+        'settings'    => ['blog' => '#params.twentytwenty'],            // Settings
+        'type'        => 'plugin'                                      // Type
     ]
 );
