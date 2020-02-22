@@ -17,9 +17,9 @@ $this->registerModule(
     'TwentyTwenty',                                // Name
     'TwentyTwenty effect for before/after images', // Description
     'Franck Paul and contributors',                // Author
-    '0.3',                                         // Version
+    '0.4',                                         // Version
     [
-        'requires'    => [['core', '2.13']], // Dependencies
+        'requires'    => [['core', '2.16']], // Dependencies
         'permissions' => 'admin',            // Permissions
         'type'        => 'plugin'           // Type
     ]

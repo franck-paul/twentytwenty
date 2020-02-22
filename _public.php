@@ -30,16 +30,9 @@ class twentyTwentyPublic
         '.twentytwenty-before-label:before { content: "' . __('Before') . '"; }' . "\n" .
         '.twentytwenty-after-label:before { content: "' . __('After') . '"; }' . "\n" .
             "</style>\n";
-        if ($core->blog->settings->twentytwenty->jquery) {
-            echo
-            dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.min.js')) .
-            dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.cookie.min.js'));
-        }
         echo
-        dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.event.move.min.js')) .
-        dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.twentytwenty.min.js')) .
-            '<script type="text/javascript">' . "\n" .
-            '$(window).load(function(){ $(".twentytwenty-container").twentytwenty(); });' . "\n" .
-            "</script>\n";
+        dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.event.move.js')) .
+        dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/jquery.twentytwenty.js')) .
+        dcUtils::jsLoad($core->blog->getPF('twentytwenty/js/main.js'));
     }
 }
