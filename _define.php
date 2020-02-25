@@ -22,6 +22,7 @@ $this->registerModule(
         'requires'    => [['core', '2.16']],                            // Dependencies
         'permissions' => 'admin',                                       // Permissions
         'support'     => 'https://github.com/franck-paul/twentytwenty', // Support URL
+        'details'     => 'https://open-time.net/?q=twentytwenty',       // Details URL
         'settings'    => ['blog' => '#params.twentytwenty'],            // Settings
         'type'        => 'plugin'                                      // Type
     ]

@@ -1,6 +1,6 @@
 ## Présentation
 
-Plugin TwentyTwenty pour Dotclear 2.6 et supérieur
+Plugin TwentyTwenty pour Dotclear 2.16 et supérieur
 
 Permet un effet avant/après sur deux images de mêmes dimensions.
 
