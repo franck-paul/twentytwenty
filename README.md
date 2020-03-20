@@ -9,10 +9,10 @@ Permet un effet avant/après sur deux images de mêmes dimensions.
 Insérer les deux images dans une div de la façon suivante :
 
 ```html
-	<div class="twentytwenty-container">
-		<img loading="eager" src="/public/avant.jpg" title="Image avant" alt="Image avant traitement" />
-		<img loading="eager" src="/public/apres.jpg" title="Image après" alt="Image après traitement" />
-	</div>
+<div class="twentytwenty-container">
+  <img loading="eager" src="/public/avant.jpg" title="Image avant" alt="Image avant traitement" />
+  <img loading="eager" src="/public/apres.jpg" title="Image après" alt="Image après traitement" />
+</div>
 ```
 
 Pour aligner l'ensemble vous pouvez rajouter une des classes suivantes à la <code>div.twentytwenty-container</code> :
@@ -24,12 +24,12 @@ Pour aligner l'ensemble vous pouvez rajouter une des classes suivantes à la <co
 Au format wiki (Dotclear), insérer les images de la façon suivante :
 
 ```html
-	///html
-	<div class="twentytwenty-container twentytwenty-center">
-        <img loading="eager" src="/public/avant.jpg" title="Image avant" alt="Image avant traitement" />
-        <img loading="eager" src="/public/apres.jpg" title="Image après" alt="Image après traitement" />
-	</div>
-	///
+///html
+<div class="twentytwenty-container twentytwenty-center">
+  <img loading="eager" src="/public/avant.jpg" title="Image avant" alt="Image avant traitement" />
+  <img loading="eager" src="/public/apres.jpg" title="Image après" alt="Image après traitement" />
+</div>
+///
 ```
 
 ## Crédits
