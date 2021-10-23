@@ -10,8 +10,9 @@
  * @copyright Franck Paul carnet.franck.paul@gmail.com
  * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
  */
-
-if (!defined('DC_RC_PATH')) {return;}
+if (!defined('DC_RC_PATH')) {
+    return;
+}
 
 $this->registerModule(
     'TwentyTwenty',                                // Name
@@ -21,9 +22,11 @@ $this->registerModule(
     [
         'requires'    => [['core', '2.16']],                            // Dependencies
         'permissions' => 'admin',                                       // Permissions
-        'support'     => 'https://github.com/franck-paul/twentytwenty', // Support URL
-        'details'     => 'https://open-time.net/?q=twentytwenty',       // Details URL
+        'type'        => 'plugin',                                      // Type
         'settings'    => ['blog' => '#params.twentytwenty'],            // Settings
-        'type'        => 'plugin'                                      // Type
+
+        'details'    => 'https://open-time.net/?q=twentytwenty',       // Details URL
+        'support'    => 'https://github.com/franck-paul/twentytwenty', // Support URL
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/twentytwenty/main/dcstore.xml'
     ]
 );
