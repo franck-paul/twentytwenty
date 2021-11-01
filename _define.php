@@ -27,6 +27,6 @@ $this->registerModule(
 
         'details'    => 'https://open-time.net/?q=twentytwenty',       // Details URL
         'support'    => 'https://github.com/franck-paul/twentytwenty', // Support URL
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/twentytwenty/main/dcstore.xml'
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/twentytwenty/master/dcstore.xml'
     ]
 );
