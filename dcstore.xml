@@ -1,8 +1,8 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="twentytwenty">
-    <name>TwentyTwenty effect for before/after images</name>
+    <name>TwentyTwenty</name>
     <version>0.3</version>
-    <author>TwentyTwenty effect for before/after images</author>
+    <author>Franck Paul and contributors</author>
     <desc>TwentyTwenty effect for before/after images</desc>
     <file>https://github.com/franck-paul/twentytwenty/releases/download/0.3/plugin-twentytwenty-0.3.zip</file>
     <da:dcmin>2.16</da:dcmin>
