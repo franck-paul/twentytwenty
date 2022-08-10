@@ -18,15 +18,15 @@ $this->registerModule(
     'TwentyTwenty',                                // Name
     'TwentyTwenty effect for before/after images', // Description
     'Franck Paul and contributors',                // Author
-    '0.3',                                         // Version
+    '0.4',                                         // Version
     [
-        'requires'    => [['core', '2.16']],                            // Dependencies
+        'requires'    => [['core', '2.23']],                            // Dependencies
         'permissions' => 'admin',                                       // Permissions
         'type'        => 'plugin',                                      // Type
         'settings'    => ['blog' => '#params.twentytwenty'],            // Settings
 
         'details'    => 'https://open-time.net/?q=twentytwenty',       // Details URL
         'support'    => 'https://github.com/franck-paul/twentytwenty', // Support URL
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/twentytwenty/master/dcstore.xml'
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/twentytwenty/master/dcstore.xml',
     ]
 );

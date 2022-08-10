@@ -1,6 +1,6 @@
 /*global $ */
 'use strict';
 
-$(window).on("load", function() {
+$(window).on("load", () => {
   $(".twentytwenty-container").twentytwenty();
 });
