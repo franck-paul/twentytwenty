@@ -22,7 +22,7 @@ dcCore::app()->addBehavior('adminBeforeBlogSettingsUpdate', ['twentyTwentyBehavi
 
 class twentyTwentyBehaviors
 {
-    public static function adminBlogPreferencesForm($core = null, $settings)
+    public static function adminBlogPreferencesForm($core, $settings)
     {
         $settings->addNameSpace('twentytwenty');
         echo
