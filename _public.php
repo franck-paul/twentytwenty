@@ -14,11 +14,9 @@ if (!defined('DC_RC_PATH')) {
     return;
 }
 
-dcCore::app()->addBehavior('publicHeadContent', ['twentyTwentyPublic', 'publicHeadContent']);
-
 class twentyTwentyPublic
 {
-    public static function publicHeadContent($core = null)
+    public static function publicHeadContent()
     {
         dcCore::app()->blog->settings->addNameSpace('twentytwenty');
         if (!dcCore::app()->blog->settings->twentytwenty->enabled) {
@@ -37,3 +35,5 @@ class twentyTwentyPublic
         dcUtils::jsModuleLoad('twentytwenty/js/main.js');
     }
 }
+
+dcCore::app()->addBehavior('publicHeadContent', [twentyTwentyPublic::class, 'publicHeadContent']);

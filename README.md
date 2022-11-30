@@ -1,4 +1,4 @@
-## Présentation
+# Présentation
 
 Plugin TwentyTwenty pour Dotclear 2.16 et supérieur
 
@@ -15,7 +15,7 @@ Insérer les deux images dans une div de la façon suivante :
 </div>
 ```
 
-Pour aligner l'ensemble vous pouvez rajouter une des classes suivantes à la <code>div.twentytwenty-container</code> :
+Pour aligner l'ensemble vous pouvez rajouter une des classes suivantes à la `div.twentytwenty-container`</code>` :
 
 * twentytwenty-left : cadrage à gauche
 * twentytwenty-center : centré
@@ -34,7 +34,7 @@ Au format wiki (Dotclear), insérer les images de la façon suivante :
 
 ## Crédits
 
-D'après le plugin jQuery TwentyTwenty disponible ici sous licence MIT (voir ci dessous) : http://zurb.com/playground/twentytwenty
+D'après le plugin jQuery TwentyTwenty disponible ici sous licence MIT (voir ci dessous) : <http://zurb.com/playground/twentytwenty>
 
 ## MIT Open Source License
 

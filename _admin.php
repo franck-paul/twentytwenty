@@ -17,12 +17,9 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 // dead but useful code, in order to have translations
 __('TwentyTwenty') . __('TwentyTwenty effect for before/after images');
 
-dcCore::app()->addBehavior('adminBlogPreferencesForm', ['twentyTwentyBehaviors', 'adminBlogPreferencesForm']);
-dcCore::app()->addBehavior('adminBeforeBlogSettingsUpdate', ['twentyTwentyBehaviors', 'adminBeforeBlogSettingsUpdate']);
-
 class twentyTwentyBehaviors
 {
-    public static function adminBlogPreferencesForm($core, $settings)
+    public static function adminBlogPreferencesForm($settings)
     {
         $settings->addNameSpace('twentytwenty');
         echo
@@ -40,3 +37,6 @@ class twentyTwentyBehaviors
         $settings->twentytwenty->put('enabled', !empty($_POST['twentytwenty_enabled']), 'boolean');
     }
 }
+
+dcCore::app()->addBehavior('adminBlogPreferencesFormV2', [twentyTwentyBehaviors::class, 'adminBlogPreferencesForm']);
+dcCore::app()->addBehavior('adminBeforeBlogSettingsUpdate', [twentyTwentyBehaviors::class, 'adminBeforeBlogSettingsUpdate']);

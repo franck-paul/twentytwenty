@@ -15,18 +15,22 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    'TwentyTwenty',                                // Name
-    'TwentyTwenty effect for before/after images', // Description
-    'Franck Paul and contributors',                // Author
-    '0.4.1',
+    'TwentyTwenty',
+    'TwentyTwenty effect for before/after images',
+    'Franck Paul and contributors',
+    '1.0',
     [
-        'requires'    => [['core', '2.23']],                            // Dependencies
-        'permissions' => 'admin',                                       // Permissions
-        'type'        => 'plugin',                                      // Type
-        'settings'    => ['blog' => '#params.twentytwenty'],            // Settings
+        'requires'    => [['core', '2.24']],
+        'permissions' => dcCore::app()->auth->makePermissions([
+            dcAuth::PERMISSION_ADMIN,
+        ]),
+        'type'     => 'plugin',
+        'settings' => [
+            'blog' => '#params.twentytwenty',
+        ],
 
-        'details'    => 'https://open-time.net/?q=twentytwenty',       // Details URL
-        'support'    => 'https://github.com/franck-paul/twentytwenty', // Support URL
+        'details'    => 'https://open-time.net/?q=twentytwenty',
+        'support'    => 'https://github.com/franck-paul/twentytwenty',
         'repository' => 'https://raw.githubusercontent.com/franck-paul/twentytwenty/master/dcstore.xml',
     ]
 );
