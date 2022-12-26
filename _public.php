@@ -18,7 +18,6 @@ class twentyTwentyPublic
 {
     public static function publicHeadContent()
     {
-        dcCore::app()->blog->settings->addNameSpace('twentytwenty');
         if (!dcCore::app()->blog->settings->twentytwenty->enabled) {
             return;
         }

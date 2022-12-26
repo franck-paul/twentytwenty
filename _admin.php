@@ -21,7 +21,6 @@ class twentyTwentyBehaviors
 {
     public static function adminBlogPreferencesForm($settings)
     {
-        $settings->addNameSpace('twentytwenty');
         echo
         '<div class="fieldset"><h4 id="twentytwenty">TwentyTwenty</h4>' .
         '<p><label class="classic">' .
@@ -33,10 +32,11 @@ class twentyTwentyBehaviors
 
     public static function adminBeforeBlogSettingsUpdate($settings)
     {
-        $settings->addNameSpace('twentytwenty');
         $settings->twentytwenty->put('enabled', !empty($_POST['twentytwenty_enabled']), 'boolean');
     }
 }
 
-dcCore::app()->addBehavior('adminBlogPreferencesFormV2', [twentyTwentyBehaviors::class, 'adminBlogPreferencesForm']);
-dcCore::app()->addBehavior('adminBeforeBlogSettingsUpdate', [twentyTwentyBehaviors::class, 'adminBeforeBlogSettingsUpdate']);
+dcCore::app()->addBehaviors([
+    'adminBlogPreferencesFormV2'    => [twentyTwentyBehaviors::class, 'adminBlogPreferencesForm'],
+    'adminBeforeBlogSettingsUpdate' => [twentyTwentyBehaviors::class, 'adminBeforeBlogSettingsUpdate'],
+]);
