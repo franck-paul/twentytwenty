@@ -1,5 +1,12 @@
 # Présentation
 
+[![Release](https://img.shields.io/github/v/release/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/releases)
+[![Date](https://img.shields.io/github/release-date/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/releases)
+[![Issues](https://img.shields.io/github/issues/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/issues)
+[![Dotclear](https://img.shields.io/badge/dotclear-v2.24-blue.svg)](https://fr.dotclear.org/download)
+[![Dotaddict](https://img.shields.io/badge/dotaddict-official-green.svg)](https://plugins.dotaddict.org/dc2/details/twentytwenty)
+[![License](https://img.shields.io/github/license/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/blob/master/LICENSE)
+
 Plugin TwentyTwenty pour Dotclear 2.16 et supérieur
 
 Permet un effet avant/après sur deux images de mêmes dimensions.
