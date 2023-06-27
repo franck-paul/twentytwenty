@@ -14,7 +14,7 @@ $this->registerModule(
     'TwentyTwenty',
     'TwentyTwenty effect for before/after images',
     'Franck Paul and contributors',
-    '2.1',
+    '2.1.1',
     [
         'requires'    => [['core', '2.26']],
         'permissions' => dcCore::app()->auth->makePermissions([
