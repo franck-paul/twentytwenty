@@ -1,10 +1,10 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="twentytwenty">
     <name>TwentyTwenty</name>
-    <version>2.1</version>
+    <version>2.1.1</version>
     <author>Franck Paul and contributors</author>
     <desc>TwentyTwenty effect for before/after images</desc>
-    <file>https://github.com/franck-paul/twentytwenty/releases/download/2.1/plugin-twentytwenty-2.1.zip</file>
+    <file>https://github.com/franck-paul/twentytwenty/releases/download/2.1.1/plugin-twentytwenty-2.1.1.zip</file>
     <da:dcmin>2.26</da:dcmin>
     <da:details>https://open-time.net/?q=twentytwenty</da:details>
     <da:support>https://github.com/franck-paul/twentytwenty</da:support>
