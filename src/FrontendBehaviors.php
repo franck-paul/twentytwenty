@@ -15,7 +15,6 @@ declare(strict_types=1);
 namespace Dotclear\Plugin\twentytwenty;
 
 use dcCore;
-use dcUtils;
 
 class FrontendBehaviors
 {
@@ -26,14 +25,14 @@ class FrontendBehaviors
         }
 
         echo
-        dcUtils::cssModuleLoad(My::id() . '/css/twentytwenty.css') .
+        My::cssLoad('twentytwenty.css') .
         '<style type="text/css">' . "\n" .
         '.twentytwenty-before-label:before { content: "' . __('Before') . '"; }' . "\n" .
         '.twentytwenty-after-label:before { content: "' . __('After') . '"; }' . "\n" .
             "</style>\n";
         echo
-        dcUtils::jsModuleLoad(My::id() . '/js/jquery.event.move.js') .
-        dcUtils::jsModuleLoad(My::id() . '/js/jquery.twentytwenty.js') .
-        dcUtils::jsModuleLoad(My::id() . '/js/main.js');
+        My::jsLoad('jquery.event.move.js') .
+        My::jsLoad('jquery.twentytwenty.js') .
+        My::jsLoad('main.js');
     }
 }

@@ -15,21 +15,18 @@ declare(strict_types=1);
 namespace Dotclear\Plugin\twentytwenty;
 
 use dcCore;
-use dcNsProcess;
+use Dotclear\Core\Process;
 
-class Frontend extends dcNsProcess
+class Frontend extends Process
 {
-    protected static $init = false; /** @deprecated since 2.27 */
     public static function init(): bool
     {
-        static::$init = My::checkContext(My::FRONTEND);
-
-        return static::$init;
+        return self::status(My::checkContext(My::FRONTEND));
     }
 
     public static function process(): bool
     {
-        if (!static::$init) {
+        if (!self::status()) {
             return false;
         }
 
@@ -40,7 +37,7 @@ class Frontend extends dcNsProcess
         }
 
         dcCore::app()->addBehaviors([
-            'publicHeadContent' => [FrontendBehaviors::class, 'publicHeadContent'],
+            'publicHeadContent' => FrontendBehaviors::publicHeadContent(...),
         ]);
 
         return true;
