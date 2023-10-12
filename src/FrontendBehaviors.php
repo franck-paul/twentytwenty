@@ -18,10 +18,10 @@ use dcCore;
 
 class FrontendBehaviors
 {
-    public static function publicHeadContent()
+    public static function publicHeadContent(): string
     {
         if (!dcCore::app()->blog->settings->twentytwenty->enabled) {
-            return;
+            return '';
         }
 
         echo
@@ -34,5 +34,7 @@ class FrontendBehaviors
         My::jsLoad('jquery.event.move.js') .
         My::jsLoad('jquery.twentytwenty.js') .
         My::jsLoad('main.js');
+
+        return '';
     }
 }
