@@ -14,13 +14,11 @@ declare(strict_types=1);
 
 namespace Dotclear\Plugin\twentytwenty;
 
-use dcCore;
-
 class FrontendBehaviors
 {
     public static function publicHeadContent(): string
     {
-        if (!dcCore::app()->blog->settings->twentytwenty->enabled) {
+        if (!My::settings()->enabled) {
             return '';
         }
 
