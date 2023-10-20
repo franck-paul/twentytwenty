@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Dotclear\Plugin\twentytwenty;
 
-use dcNamespace;
+use Dotclear\App;
 use Dotclear\Helper\Html\Form\Checkbox;
 use Dotclear\Helper\Html\Form\Fieldset;
 use Dotclear\Helper\Html\Form\Label;
@@ -49,7 +49,7 @@ class BackendBehaviors
     public static function adminBeforeBlogSettingsUpdate(): string
     {
         $settings = My::settings();
-        $settings->put('enabled', !empty($_POST['twentytwenty_enabled']), dcNamespace::NS_BOOL);
+        $settings->put('enabled', !empty($_POST['twentytwenty_enabled']), App::blogWorkspace()::NS_BOOL);
 
         return '';
     }
