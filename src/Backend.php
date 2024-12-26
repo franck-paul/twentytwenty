@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief twentytwenty, a plugin for Dotclear 2
  *
@@ -22,7 +23,8 @@ class Backend extends Process
     public static function init(): bool
     {
         // dead but useful code, in order to have translations
-        __('TwentyTwenty') . __('TwentyTwenty effect for before/after images');
+        __('TwentyTwenty');
+        __('TwentyTwenty effect for before/after images');
 
         return self::status(My::checkContext(My::BACKEND));
     }
