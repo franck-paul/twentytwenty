@@ -1,7 +1,6 @@
-/*global $ */
-(() => {
-  $.fn.twentytwenty = function (options) {
-    var options = $.extend(
+(($) => {
+  $.fn.twentytwenty = function (user_options) {
+    const options = $.extend(
       {
         default_offset_pct: 0.5,
         orientation: 'horizontal',
@@ -12,7 +11,7 @@
         move_with_handle_only: true,
         click_to_move: false,
       },
-      options,
+      user_options,
     );
 
     return this.each(function () {
@@ -78,14 +77,14 @@
         return minMaxNumber(sliderPercentage, 0, 1);
       };
 
-      $(window).on('resize.twentytwenty', (e) => {
+      $(window).on('resize.twentytwenty', (_event) => {
         adjustSlider(sliderPct);
       });
 
-      var offsetX = 0;
-      var offsetY = 0;
-      var imgWidth = 0;
-      var imgHeight = 0;
+      let offsetX = 0;
+      let offsetY = 0;
+      let imgWidth = 0;
+      let imgHeight = 0;
       const onMoveStart = (e) => {
         if (
           ((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY && e.distX > -e.distY)) &&
@@ -148,4 +147,4 @@
       $(window).trigger('resize.twentytwenty');
     });
   };
-})();
+})(jQuery);

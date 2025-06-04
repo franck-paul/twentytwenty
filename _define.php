@@ -28,5 +28,6 @@ $this->registerModule(
         'details'    => 'https://open-time.net/?q=twentytwenty',
         'support'    => 'https://github.com/franck-paul/twentytwenty',
         'repository' => 'https://raw.githubusercontent.com/franck-paul/twentytwenty/main/dcstore.xml',
+        'license'    => 'gpl2',
     ]
 );

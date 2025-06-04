@@ -1,6 +1,6 @@
-/*global $ */
+/*global $, dotclear */
 'use strict';
 
-$(window).on('load', () => {
+dotclear.ready(() => {
   $('.twentytwenty-container').twentytwenty();
 });
