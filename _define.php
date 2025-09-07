@@ -15,9 +15,9 @@ $this->registerModule(
     'TwentyTwenty',
     'TwentyTwenty effect for before/after images',
     'Franck Paul and contributors',
-    '4.3',
+    '5.0',
     [
-        'date'        => '2025-06-04T12:11:35+0200',
+        'date'        => '2025-09-07T15:42:59+0200',
         'requires'    => [['core', '2.36']],
         'permissions' => 'My',
         'type'        => 'plugin',
