@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief twentytwenty, a plugin for Dotclear 2
  *
@@ -27,13 +28,14 @@ class BackendBehaviors
     public static function adminBlogPreferencesForm(): string
     {
         $settings = My::settings();
+        $enabled  = $settings->enabled ? (bool) $settings->enabled : null;
 
         echo
         (new Fieldset('twentytwenty'))
         ->legend((new Legend(__('TwentyTwenty'))))
         ->fields([
             (new Para())->items([
-                (new Checkbox('twentytwenty_enabled', $settings->enabled))
+                (new Checkbox('twentytwenty_enabled', $enabled))
                     ->value(1)
                     ->label((new Label(__('Enable TwentyTwenty'), Label::INSIDE_TEXT_AFTER))),
             ]),
