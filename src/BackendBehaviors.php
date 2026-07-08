@@ -28,7 +28,7 @@ class BackendBehaviors
     public static function adminBlogPreferencesForm(): string
     {
         $settings = My::settings();
-        $enabled  = $settings->enabled ? (bool) $settings->enabled : null;
+        $enabled  = $settings->getBool('enabled', false);
 
         echo
         (new Fieldset('twentytwenty'))
