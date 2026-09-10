@@ -20,8 +20,8 @@ use Dotclear\Helper\Html\Form\Checkbox;
 use Dotclear\Helper\Html\Form\Fieldset;
 use Dotclear\Helper\Html\Form\Label;
 use Dotclear\Helper\Html\Form\Legend;
+use Dotclear\Helper\Html\Form\Note;
 use Dotclear\Helper\Html\Form\Para;
-use Dotclear\Helper\Html\Form\Text;
 
 class BackendBehaviors
 {
@@ -32,17 +32,18 @@ class BackendBehaviors
 
         echo
         (new Fieldset('twentytwenty'))
-        ->legend((new Legend(__('TwentyTwenty'))))
-        ->fields([
-            (new Para())->items([
-                (new Checkbox('twentytwenty_enabled', $enabled))
-                    ->value(1)
-                    ->label((new Label(__('Enable TwentyTwenty'), Label::INSIDE_TEXT_AFTER))),
-            ]),
-            (new Para())->class('clear form-note warn')->items([
-                (new Text(null, __('Note that this feature requires jQuery 3+.'))),
-            ]),
-        ])
+            ->legend((new Legend(__('TwentyTwenty'))))
+            ->fields([
+                (new Para())
+                    ->items([
+                        (new Checkbox('twentytwenty_enabled', $enabled))
+                            ->value(1)
+                            ->label((new Label(__('Enable TwentyTwenty'), Label::INSIDE_TEXT_AFTER))),
+                    ]),
+                (new Note())
+                    ->class('form-note')
+                    ->text(__('Note that this feature requires jQuery 3+.')),
+            ])
         ->render();
 
         return '';
