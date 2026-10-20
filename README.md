@@ -3,7 +3,7 @@
 [![Release](https://img.shields.io/github/v/release/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/releases)
 [![Date](https://img.shields.io/github/release-date/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/releases)
 [![Issues](https://img.shields.io/github/issues/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/issues)
-[![License](https://img.shields.io/github/license/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/franck-paul/twentytwenty)](https://github.com/franck-paul/twentytwenty/blob/main/LICENSE)
 
 Plugin TwentyTwenty pour Dotclear 2.16 et supérieur
 
