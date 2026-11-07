@@ -18,9 +18,9 @@ if (isset($this) && is_object($this) && method_exists($this, 'registerModule') &
         'TwentyTwenty',
         'TwentyTwenty effect for before/after images',
         'Franck Paul and contributors',
-        '6.0',
+        '6.1',
         [
-            'date'        => '2026-08-03T10:15:05+0200',
+            'date'        => '2026-11-07T17:08:49+0100',
             'requires'    => [['core', '2.39']],
             'permissions' => 'My',
             'type'        => 'plugin',
